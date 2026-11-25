@@ -10,302 +10,331 @@
 
 body{
  font-family:Arial,sans-serif;
- background:#f4f7fc;
- color:#10284a;
+ background:#f4f7fb;
+ color:#18304d;
 }
 
-.topbar{
- background:#063477;
+.top{
+ background:#073b78;
  color:white;
- padding:12px 4%;
+ padding:9px 4%;
  display:flex;
  justify-content:space-between;
- flex-wrap:wrap;
- gap:10px;
- font-size:14px;
+ font-size:13px;
 }
 
 header{
  background:white;
- padding:15px 4%;
+ padding:14px 4%;
  display:flex;
  justify-content:space-between;
  align-items:center;
+ gap:12px;
  flex-wrap:wrap;
- gap:15px;
+ box-shadow:0 2px 8px #0001;
 }
 
 .logo{
- font-size:27px;
+ font-size:22px;
  font-weight:bold;
- color:#064080;
+ color:#073b78;
 }
 
-.logo span{color:#f47716}
+.logo span{color:#f28b18}
 
 nav a{
  text-decoration:none;
- color:#10284a;
+ color:#173454;
+ margin:7px;
  font-weight:bold;
- margin:8px;
+ font-size:14px;
+}
+
+.search{
+ padding:9px 12px;
+ border:1px solid #ddd;
+ border-radius:20px;
+ width:170px;
 }
 
 .hero{
- min-height:360px;
- background:
- linear-gradient(90deg,#ffffffed,#ffffff55),
- url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85')
- center/cover;
+ min-height:310px;
+ padding:45px 5%;
  display:flex;
  align-items:center;
- padding:45px 5%;
+ background:
+ linear-gradient(90deg,#ffffffed,#ffffff35),
+ url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1500&q=85')
+ center/cover;
 }
 
-.hero-content{max-width:600px}
+.hero-content{max-width:560px}
 
 .hero h1{
- font-size:42px;
- color:#063477;
- margin-bottom:15px;
+ color:#073b78;
+ font-size:38px;
+ line-height:1.2;
+ margin-bottom:14px;
 }
 
-.hero h1 span{color:#f47716}
+.hero h1 span{color:#ed8417}
 
 .hero p{
- font-size:19px;
- margin-bottom:25px;
+ font-size:17px;
+ margin-bottom:20px;
 }
 
-.button{
+.btn{
  display:inline-block;
- padding:13px 24px;
- background:#063477;
+ padding:12px 22px;
+ background:#073b78;
  color:white;
  text-decoration:none;
- border-radius:30px;
+ border-radius:5px;
  font-weight:bold;
- margin:5px;
+ margin:4px;
 }
 
-.yellow{background:#ffbd19;color:#111}
+.orange{background:#f39b16;color:#111}
 
-section{padding:40px 4%}
+section{padding:30px 4%}
 
-.title{
+.heading{
  text-align:center;
- color:#063477;
- font-size:30px;
- margin-bottom:30px;
+ color:#073b78;
+ font-size:25px;
+ margin-bottom:22px;
 }
 
-.cards{
+.machine-grid{
  display:grid;
- grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
- gap:15px;
+ grid-template-columns:repeat(5,minmax(0,1fr));
+ gap:12px;
 }
 
 .card{
  background:white;
- border:1px solid #dce6f5;
- border-radius:15px;
+ border:1px solid #e1e7ef;
+ border-radius:9px;
  overflow:hidden;
  text-align:center;
- box-shadow:0 3px 12px #0001;
+ box-shadow:0 2px 8px #0001;
 }
 
 .card img{
  width:100%;
- height:170px;
+ height:115px;
  object-fit:cover;
 }
 
 .card h3{
- font-size:18px;
- padding:12px 5px 8px;
+ font-size:14px;
+ padding:9px 4px 5px;
+ min-height:43px;
 }
 
 .price{
- display:inline-block;
- background:#ffbd19;
- padding:8px 20px;
- border-radius:25px;
- font-size:20px;
+ color:#087b39;
+ font-size:17px;
  font-weight:bold;
- margin:5px;
+ padding:5px;
 }
 
-.actions{
+.card-buttons{
  display:flex;
- gap:6px;
- padding:10px;
+ gap:5px;
+ padding:8px;
 }
 
-.actions a{
+.card-buttons a{
  flex:1;
- padding:10px 4px;
- border-radius:8px;
- background:#063477;
+ font-size:11px;
+ padding:8px 2px;
+ border-radius:4px;
  color:white;
  text-decoration:none;
- font-size:13px;
+ background:#073b78;
  font-weight:bold;
 }
 
-.actions a:last-child{background:#078b39}
+.card-buttons a:last-child{
+ background:#f39b16;
+ color:#111;
+}
 
-.info{
+.features{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:12px;
+}
+
+.feature{
+ background:white;
+ padding:18px 8px;
+ text-align:center;
+ border-radius:8px;
+ font-weight:bold;
+ font-size:14px;
+}
+
+.about-contact{
  display:grid;
  grid-template-columns:1fr 1fr;
- gap:20px;
+ gap:15px;
 }
 
-.box{
+.info-box{
  background:white;
- border-radius:12px;
- overflow:hidden;
- box-shadow:0 3px 12px #0001;
-}
-
-.box h2{
- background:#063477;
- color:white;
- padding:17px;
-}
-
-.box p{
+ border-radius:8px;
  padding:20px;
  line-height:1.8;
 }
 
-.contact{
- background:#063477;
- color:white;
- text-align:center;
+.info-box h2{
+ color:#073b78;
+ margin-bottom:10px;
 }
-
-.contact h2{color:white}
 
 footer{
- background:#03234e;
+ background:#073b78;
  color:white;
  text-align:center;
- padding:20px;
+ padding:18px;
 }
 
-@media(max-width:600px){
- .hero h1{font-size:31px}
- .hero{min-height:320px}
- .logo{font-size:22px}
- nav a{margin:5px;font-size:13px}
- .info{grid-template-columns:1fr}
+@media(max-width:750px){
+ .machine-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+ }
+ .features{grid-template-columns:repeat(2,1fr)}
+ .hero h1{font-size:29px}
+ .hero{min-height:280px}
+ .about-contact{grid-template-columns:1fr}
+ header{justify-content:center}
+ nav{text-align:center}
+ .search{width:100%}
+}
+
+@media(min-width:751px) and (max-width:1000px){
+ .machine-grid{grid-template-columns:repeat(3,1fr)}
 }
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
- <span>☎ संपर्क करें</span>
- <span>✉ Machine Rental Bharat</span>
- <span>📍 India</span>
+<div class="top">
+ <span>☎ Machine Rental Bharat</span>
+ <span>भारत में मशीन खरीदें और किराये पर लें</span>
 </div>
 
 <header>
  <div class="logo">🔨 MACHINE <span>RENTAL</span> BHARAT</div>
+
  <nav>
   <a href="#home">Home</a>
   <a href="#machines">Machines</a>
   <a href="#about">About Us</a>
-  <a href="#contact">Contact Us</a>
+  <a href="#contact">Contact</a>
  </nav>
+
+ <input class="search" type="search" placeholder="Search Machines...">
 </header>
 
 <div class="hero" id="home">
  <div class="hero-content">
   <h1>Construction Made Easy with <span>Machine Rental Bharat</span></h1>
   <p>छोटी मशीनें खरीदें और किराये पर लें। किफायती कीमतों पर।</p>
-  <a class="button" href="#machines">Shop Now →</a>
-  <a class="button yellow" href="#machines">Rent Now →</a>
+  <a class="btn" href="#machines">Shop Now →</a>
+  <a class="btn orange" href="#machines">Rent Now →</a>
  </div>
 </div>
 
 <section id="machines">
- <h2 class="title">🔨 Our Popular Machines</h2>
+ <h2 class="heading">Our Popular Machines</h2>
 
- <div class="cards">
+ <div class="machine-grid">
 
   <div class="card">
-   <img src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=600&q=80">
+   <img src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=400&q=80">
    <h3>Mini Concrete Mixer</h3>
    <div class="price">₹6,500</div>
-   <div class="actions">
-    <a href="#contact">🛒 Buy Now</a>
-    <a href="#contact">▣ Rent Now</a>
+   <div class="card-buttons">
+    <a href="#contact">Buy Now</a>
+    <a href="#contact">Rent Now</a>
    </div>
   </div>
 
   <div class="card">
-   <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80">
+   <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=400&q=80">
    <h3>Tile Cutting Machine</h3>
    <div class="price">₹5,500</div>
-   <div class="actions">
-    <a href="#contact">🛒 Buy Now</a>
-    <a href="#contact">▣ Rent Now</a>
+   <div class="card-buttons">
+    <a href="#contact">Buy Now</a>
+    <a href="#contact">Rent Now</a>
    </div>
   </div>
 
   <div class="card">
-   <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80">
-   <h3>Portable Vibrator</h3>
-   <div class="price">₹7,000</div>
-   <div class="actions">
-    <a href="#contact">🛒 Buy Now</a>
-    <a href="#contact">▣ Rent Now</a>
-   </div>
-  </div>
-
-  <div class="card">
-   <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=600&q=80">
-   <h3>Water Pump Machine</h3>
-   <div class="price">₹8,500</div>
-   <div class="actions">
-    <a href="#contact">🛒 Buy Now</a>
-    <a href="#contact">▣ Rent Now</a>
-   </div>
-  </div>
-
-  <div class="card">
-   <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80">
+   <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=400&q=80">
    <h3>Mini Drilling Machine</h3>
    <div class="price">₹9,500</div>
-   <div class="actions">
-    <a href="#contact">🛒 Buy Now</a>
-    <a href="#contact">▣ Rent Now</a>
+   <div class="card-buttons">
+    <a href="#contact">Buy Now</a>
+    <a href="#contact">Rent Now</a>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=80">
+   <h3>Water Pump Machine</h3>
+   <div class="price">₹8,500</div>
+   <div class="card-buttons">
+    <a href="#contact">Buy Now</a>
+    <a href="#contact">Rent Now</a>
+   </div>
+  </div>
+
+  <div class="card">
+   <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80">
+   <h3>Portable Vibrator</h3>
+   <div class="price">₹7,000</div>
+   <div class="card-buttons">
+    <a href="#contact">Buy Now</a>
+    <a href="#contact">Rent Now</a>
    </div>
   </div>
 
  </div>
 </section>
 
-<section class="info" id="about">
+<section>
+ <h2 class="heading">Why Choose Us?</h2>
+ <div class="features">
+  <div class="feature">✓ Quality Machines</div>
+  <div class="feature">✓ Affordable Prices</div>
+  <div class="feature">✓ Customer Support</div>
+  <div class="feature">✓ Pan India Service</div>
+ </div>
+</section>
 
- <div class="box">
-  <h2>👥 About Us</h2>
+<section class="about-contact">
+
+ <div class="info-box" id="about">
+  <h2>About Us</h2>
   <p>
    Machine Rental Bharat में आपका स्वागत है।
    हमारा उद्देश्य छोटी निर्माण मशीनों को
-   खरीदना और किराये पर लेना आसान बनाना है।
-   हम किफायती मशीनें उपलब्ध कराने का प्रयास करते हैं।
+   किफायती कीमतों पर उपलब्ध कराना है।
   </p>
  </div>
 
- <div class="box" id="contact">
-  <h2>☎ Contact Us</h2>
+ <div class="info-box" id="contact">
+  <h2>Contact Us</h2>
   <p>
-   मशीन खरीदने या किराये पर लेने के लिए संपर्क करें।<br><br>
-   📞 अपना मोबाइल नंबर यहाँ डालें।<br>
-   ✉ अपना ईमेल यहाँ डालें।<br>
-   📍 अपना शहर यहाँ डालें।
+   मशीन खरीदने या किराये पर लेने के लिए संपर्क करें।<br>
+   📞 मोबाइल नंबर जल्द जोड़ा जाएगा।<br>
+   ✉ ईमेल जल्द जोड़ा जाएगा।
   </p>
  </div>
 
