@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Rental Bharat</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:#f1f5f9;
+ color:#172554;
+}
+header{
+ background:#082b60;
+ color:white;
+ padding:20px;
+ text-align:center;
+}
+header h1{margin:0;font-size:27px}
+nav{
+ background:#fff;
+ padding:15px;
+ text-align:center;
+}
+nav a{
+ margin:8px;
+ color:#082b60;
+ text-decoration:none;
+ font-weight:bold;
+}
+.hero{
+ background:linear-gradient(120deg,#063b80,#1686c9);
+ color:white;
+ text-align:center;
+ padding:65px 15px;
+}
+.hero h2{font-size:32px}
+button{
+ background:#ffb800;
+ border:0;
+ padding:12px 22px;
+ border-radius:7px;
+ font-weight:bold;
+ cursor:pointer;
+}
+section{padding:25px 15px}
+h2{text-align:center}
+.machines{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:18px;
+}
+.card{
+ background:white;
+ border-radius:12px;
+ padding:18px;
+ text-align:center;
+ box-shadow:0 3px 12px #0001;
+}
+.machine{
+ font-size:65px;
+ padding:20px;
+ background:#e0f2fe;
+ border-radius:10px;
+}
+.price{
+ color:#07813c;
+ font-size:21px;
+ font-weight:bold;
+}
+footer{
+ background:#082b60;
+ color:white;
+ text-align:center;
+ padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🇮🇳 MACHINE RENTAL BHARAT</h1>
+<p>Buy • Rent • Invest • Grow</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#machines">Machines</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+<h2>छोटी मशीनें, बड़े अवसर!</h2>
+<p>अपनी जरूरत के अनुसार मशीन खरीदें या किराये पर लें।</p>
+<button onclick="document.getElementById('machines').scrollIntoView()">
+Explore Machines
+</button>
+</div>
+
+<section id="machines">
+<h2>Our Machines</h2>
+
+<div class="machines">
+
+<div class="card">
+<div class="machine">⚙️</div>
+<h3>Power Tiller</h3>
+<p class="price">₹5,000 - ₹20,000</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<div class="machine">💧</div>
+<h3>Water Pump</h3>
+<p class="price">₹5,000 - ₹15,000</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<div class="machine">🏗️</div>
+<h3>Vibrator Plate</h3>
+<p class="price">₹8,000 - ₹15,000</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<div class="machine">🔧</div>
+<h3>Concrete Mixer</h3>
+<p class="price">₹10,000 - ₹20,000</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<div class="machine">⚡</div>
+<h3>Generator</h3>
+<p class="price">₹12,000 - ₹20,000</p>
+<button>View Details</button>
+</div>
+
+<div class="card">
+<div class="machine">🛠️</div>
+<h3>Hammer Drill</h3>
+<p class="price">₹5,000 - ₹15,000</p>
+<button>View Details</button>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p style="text-align:center">
+Machine Rental Bharat - मशीन खरीदने और किराये पर लेने का एक प्लेटफॉर्म।
+</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p style="text-align:center">
+हमसे संपर्क करने के लिए जल्द ही यहाँ सुविधा उपलब्ध होगी।
+</p>
+</section>
+
+<footer>
+<p>© 2026 Machine Rental Bharat</p>
+<p>Safe • Secure • Reliable</p>
+</footer>
+
+</body>
+</html>
