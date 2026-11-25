@@ -3,79 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Machine Rental Bharat</title>
 
 <style>
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
+
 body{
- margin:0;
- font-family:Arial,sans-serif;
- background:#f1f5f9;
- color:#172554;
+font-family:Arial,sans-serif;
+background:#f1f5f9;
+color:#172554;
 }
+
 header{
- background:#082b60;
- color:white;
- padding:20px;
- text-align:center;
+background:#092c5e;
+color:white;
+text-align:center;
+padding:25px 10px;
 }
-header h1{margin:0;font-size:27px}
+
+header h1{font-size:30px}
+
 nav{
- background:#fff;
- padding:15px;
- text-align:center;
+background:white;
+padding:16px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:10;
 }
+
 nav a{
- margin:8px;
- color:#082b60;
- text-decoration:none;
- font-weight:bold;
+text-decoration:none;
+color:#092c5e;
+font-weight:bold;
+margin:10px;
 }
+
 .hero{
- background:linear-gradient(120deg,#063b80,#1686c9);
- color:white;
- text-align:center;
- padding:65px 15px;
+background:
+linear-gradient(#001d3dcc,#001d3dcc),
+url('https://images.pexels.com/photos/24861854/pexels-photo-24861854.jpeg?auto=compress&cs=tinysrgb&w=1400');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:110px 15px;
 }
-.hero h2{font-size:32px}
+
+.hero h2{
+font-size:38px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:19px;
+margin-bottom:25px;
+}
+
 button{
- background:#ffb800;
- border:0;
- padding:12px 22px;
- border-radius:7px;
- font-weight:bold;
- cursor:pointer;
+background:#ffb800;
+border:0;
+padding:13px 23px;
+border-radius:7px;
+font-weight:bold;
+font-size:16px;
+cursor:pointer;
 }
-section{padding:25px 15px}
-h2{text-align:center}
+
+section{padding:45px 15px}
+
+.title{
+text-align:center;
+font-size:30px;
+margin-bottom:30px;
+}
+
 .machines{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
- gap:18px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:22px;
+max-width:1100px;
+margin:auto;
 }
+
 .card{
- background:white;
- border-radius:12px;
- padding:18px;
- text-align:center;
- box-shadow:0 3px 12px #0001;
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 4px 15px #0002;
+text-align:center;
+padding-bottom:22px;
 }
-.machine{
- font-size:65px;
- padding:20px;
- background:#e0f2fe;
- border-radius:10px;
+
+.card img{
+width:100%;
+height:190px;
+object-fit:cover;
 }
+
+.card h3{
+margin:18px 5px 10px;
+font-size:21px;
+}
+
 .price{
- color:#07813c;
- font-size:21px;
- font-weight:bold;
+color:#07813c;
+font-size:22px;
+font-weight:bold;
+margin:10px;
 }
+
+.rent{
+color:#e36b00;
+font-weight:bold;
+margin:10px;
+}
+
+.card button{
+margin:7px;
+}
+
+.about{
+background:#e0f2fe;
+text-align:center;
+line-height:1.8;
+}
+
+.contact{
+background:#092c5e;
+color:white;
+text-align:center;
+line-height:2;
+}
+
 footer{
- background:#082b60;
- color:white;
- text-align:center;
- padding:25px;
+background:#061b38;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:500px){
+.hero h2{font-size:29px}
+header h1{font-size:24px}
+nav a{margin:5px;font-size:14px}
 }
 </style>
 </head>
@@ -97,78 +169,74 @@ footer{
 <div class="hero">
 <h2>छोटी मशीनें, बड़े अवसर!</h2>
 <p>अपनी जरूरत के अनुसार मशीन खरीदें या किराये पर लें।</p>
-<button onclick="document.getElementById('machines').scrollIntoView()">
+<button onclick="location.href='#machines'">
 Explore Machines
 </button>
 </div>
 
 <section id="machines">
-<h2>Our Machines</h2>
+
+<h2 class="title">Our Machines</h2>
 
 <div class="machines">
 
 <div class="card">
-<div class="machine">⚙️</div>
-<h3>Power Tiller</h3>
-<p class="price">₹5,000 - ₹20,000</p>
-<button>View Details</button>
-</div>
-
-<div class="card">
-<div class="machine">💧</div>
-<h3>Water Pump</h3>
-<p class="price">₹5,000 - ₹15,000</p>
-<button>View Details</button>
-</div>
-
-<div class="card">
-<div class="machine">🏗️</div>
-<h3>Vibrator Plate</h3>
-<p class="price">₹8,000 - ₹15,000</p>
-<button>View Details</button>
-</div>
-
-<div class="card">
-<div class="machine">🔧</div>
-<h3>Concrete Mixer</h3>
+<img src="https://images.pexels.com/photos/19665533/pexels-photo-19665533.jpeg?auto=compress&cs=tinysrgb&w=800">
+<h3>Mini Concrete Mixer</h3>
 <p class="price">₹10,000 - ₹20,000</p>
-<button>View Details</button>
+<p class="rent">Rent: कीमत पूछें</p>
+<button onclick="location.href='#contact'">Buy Now</button>
+<button onclick="location.href='#contact'">Rent Now</button>
 </div>
 
 <div class="card">
-<div class="machine">⚡</div>
-<h3>Generator</h3>
+<img src="https://images.pexels.com/photos/6034140/pexels-photo-6034140.jpeg?auto=compress&cs=tinysrgb&w=800">
+<h3>Construction Mixer</h3>
 <p class="price">₹12,000 - ₹20,000</p>
-<button>View Details</button>
+<p class="rent">Rent: कीमत पूछें</p>
+<button onclick="location.href='#contact'">Buy Now</button>
+<button onclick="location.href='#contact'">Rent Now</button>
 </div>
 
 <div class="card">
-<div class="machine">🛠️</div>
-<h3>Hammer Drill</h3>
+<img src="https://images.pexels.com/photos/30996445/pexels-photo-30996445.jpeg?auto=compress&cs=tinysrgb&w=800">
+<h3>Construction Equipment</h3>
 <p class="price">₹5,000 - ₹15,000</p>
-<button>View Details</button>
+<p class="rent">Rent: कीमत पूछें</p>
+<button onclick="location.href='#contact'">Buy Now</button>
+<button onclick="location.href='#contact'">Rent Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.pexels.com/photos/15798780/pexels-photo-15798780.jpeg?auto=compress&cs=tinysrgb&w=800">
+<h3>Construction Tools</h3>
+<p class="price">₹5,000 - ₹12,000</p>
+<p class="rent">Rent: कीमत पूछें</p>
+<button onclick="location.href='#contact'">Buy Now</button>
+<button onclick="location.href='#contact'">Rent Now</button>
 </div>
 
 </div>
 </section>
 
-<section id="about">
-<h2>About Us</h2>
-<p style="text-align:center">
-Machine Rental Bharat - मशीन खरीदने और किराये पर लेने का एक प्लेटफॉर्म।
+<section class="about" id="about">
+<h2 class="title">About Machine Rental Bharat</h2>
+<p>
+Machine Rental Bharat एक ऐसा प्लेटफॉर्म है
+जहाँ ग्राहक छोटी मशीनें खरीदने और किराये पर लेने
+की जानकारी प्राप्त कर सकते हैं।
 </p>
 </section>
 
-<section id="contact">
-<h2>Contact Us</h2>
-<p style="text-align:center">
-हमसे संपर्क करने के लिए जल्द ही यहाँ सुविधा उपलब्ध होगी।
-</p>
+<section class="contact" id="contact">
+<h2 class="title">Contact Us</h2>
+<p>Machine खरीदने या किराये पर लेने के लिए हमसे संपर्क करें।</p>
+<p>जल्द ही संपर्क सुविधा उपलब्ध होगी।</p>
 </section>
 
 <footer>
 <p>© 2026 Machine Rental Bharat</p>
-<p>Safe • Secure • Reliable</p>
+<p>Buy • Rent • Grow</p>
 </footer>
 
 </body>
